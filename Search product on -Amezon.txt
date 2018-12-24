@@ -1,0 +1,38 @@
+package WebDriver;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ByHomeTheatre {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Mayur\\Downloads\\Chrome\\chromedriver.exe");
+		WebDriver Driver=new ChromeDriver();
+		Driver.get("https://www.amazon.in");
+		Driver.findElement(By.id("twotabsearchtextbox")).sendKeys("iBall Raaga 2.1 Q9 Full Wood Speakers (Rosewood)");
+        Driver.findElement(By.xpath("//*[@id='nav-search']//form//div[2]//div//input")).click();
+        Driver.findElement(By.linkText("iBall Raaga 2.1 Q9 Full Wood Speakers (Rosewood)")).click();
+        Driver.findElement(By.linkText("iBall Raaga 2.1 Q9 Full Wood Speakers (Rosewood)")).click();
+       Thread.sleep(5000);
+       String winHandleBefore = Driver.getWindowHandle();
+       for(String winHandle : Driver.getWindowHandles()){
+    	    Driver.switchTo().window(winHandle);
+    	}
+
+        Driver.findElement(By.id("buy-now-button")).click();
+        Driver.findElement(By.id("createAccountSubmit")).click();
+        Thread.sleep(2000);
+        Driver.findElement(By.id("ap_customer_name")).sendKeys("Mayur");
+        Thread.sleep(2000);
+        Driver.findElement(By.id("ap_phone_number")).sendKeys("7972160829");
+        Thread.sleep(2000);
+        Driver.findElement(By.id("ap_email")).sendKeys("mayurbagade99@gmail.com");
+        Driver.findElement(By.id("ap_password")).sendKeys("M@yur12345");
+        Driver.findElement(By.id("continue")).click();
+        
+	}
+
+}
