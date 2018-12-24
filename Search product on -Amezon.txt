@@ -27,10 +27,10 @@ public class ByHomeTheatre {
         Thread.sleep(2000);
         Driver.findElement(By.id("ap_customer_name")).sendKeys("Mayur");
         Thread.sleep(2000);
-        Driver.findElement(By.id("ap_phone_number")).sendKeys("7972160829");
+        Driver.findElement(By.id("ap_phone_number")).sendKeys("Enter_Mobile_Number");
         Thread.sleep(2000);
-        Driver.findElement(By.id("ap_email")).sendKeys("mayurbagade99@gmail.com");
-        Driver.findElement(By.id("ap_password")).sendKeys("M@yur12345");
+        Driver.findElement(By.id("ap_email")).sendKeys("Enter_email id");
+        Driver.findElement(By.id("ap_password")).sendKeys("Enter_Password");
         Driver.findElement(By.id("continue")).click();
         
 	}
