@@ -1,0 +1,6 @@
+in this project we cover how to check ecommerce website
+
+- Test how to search the product 
+- How to handal multipal windows 
+- creating account 
+- how to perchase the product 
