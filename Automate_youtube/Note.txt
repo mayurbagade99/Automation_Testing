@@ -1,0 +1,4 @@
+in this project just we cover how to autoamte the youtube \
+- search the video 
+- play the video 
+- clear the field and search new video    
